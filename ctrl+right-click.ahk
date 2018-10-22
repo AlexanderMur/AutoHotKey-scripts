@@ -8,6 +8,6 @@ $RButton::
 	SendInput, {RButton Down}
 	SendInput, {Ctrl Down}
 	KeyWait, RButton
-	SendInput, {RButton Up}
 	SendInput, {Ctrl Up}
+	SendInput, {RButton Up}
 return
