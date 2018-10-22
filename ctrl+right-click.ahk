@@ -6,6 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 $RButton::
 	SendInput, {RButton Down}
+	Sleep, 10
 	SendInput, {Ctrl Down}
 	KeyWait, RButton
 	SendInput, {Ctrl Up}
