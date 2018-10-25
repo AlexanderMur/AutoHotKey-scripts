@@ -7,10 +7,12 @@ wasClick := 0
 
 $RButton::
 	wasClick := 0
+	start := A_TickCount
 	SendInput, {Ctrl Down}
 	KeyWait, RButton
 	SendInput, {Ctrl Up}
-	If (!wasClick){
+	time := A_TickCount - start
+	If (!wasClick && time <= 800){
 		SendInput, {RButton}	
 	}
 	wasClick := 0
@@ -22,4 +24,3 @@ return
 *~LButton::
 	wasClick := 1
 return
-
