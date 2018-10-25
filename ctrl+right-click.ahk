@@ -17,10 +17,9 @@ $RButton::
 return
 
 
-~LButton::
-	KeyWait, LButton	
+*~WheelUp::
+*~WheelDown::
+*~LButton::
 	wasClick := 1
 return
 
-
-::btw::by the way 
